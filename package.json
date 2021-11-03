@@ -1,0 +1,22 @@
+{
+  "name": "tdd-with-jest-assignment",
+  "version": "1.0.0",
+  "description": "[<img src=\"assets/images/su-logo.png\" alt=\"Skills Union Logo\" height=\"80px\" />](https://www.skillsunion.com/)",
+  "main": "./src/insert.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkillsUnion/tdd-with-jest-assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SkillsUnion/tdd-with-jest-assignment/issues"
+  },
+  "homepage": "https://github.com/SkillsUnion/tdd-with-jest-assignment#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
