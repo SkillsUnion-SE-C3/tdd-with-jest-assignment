@@ -12,7 +12,6 @@ describe('getAge()', () => {
       getAge(2022)
     }).toThrow(new Error('Input should be greater than current year'))
   })
-
 })
 
   it('returns a number when input is correct', () => {
