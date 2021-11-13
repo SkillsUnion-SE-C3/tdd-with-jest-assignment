@@ -7,11 +7,10 @@ describe('getAge()', () => {
   });
 
   it('throws an error when input is greater than current year', () => {
-    const year = 2021;
-    //expect(getAge(year)).toThrowError(new Error('Input should be greater than current year'))
-    expect(year).toBeLessThanOrEqual(2022);
-
-
+    expect(() => {
+      getAge(2022);
+    }).toThrow(new Error('Input should be greater than current year'));
+    // expect(year).toBeLessThanOrEqual(2022);
   });
 
   it('returns a number when input is correct', () => {
@@ -20,12 +19,14 @@ describe('getAge()', () => {
   })
 
   it('calculates the age correctly when year is 2000', () => {
-    expect(typeof getAge(2000)).toBe("number")
+    result = getAge(2000);
+    expect(result).toBe(21)
 
   })
 
   it('calculates the age correctly when year is 1942', () => {
-    expect(typeof getAge(1942)).toBe("number")
+    result = getAge(1942)
+    expect(result).toBe(79)
 
   })
 })
